@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venkatakarthik Marineni - Software Developer</title>
+  <title>Karthik Marineni - Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
@@ -25,7 +25,6 @@
       backdrop-filter: blur(10px);
       z-index: 1000;
       padding: 1rem 0;
-      transition: all 0.3s ease;
     }
     .nav-container {
       max-width: 1200px;
@@ -160,6 +159,7 @@
     }
     .contact-info {
       text-align: center;
+      margin-bottom: 2rem;
     }
     .contact-info a {
       display: block;
@@ -189,6 +189,25 @@
     .social-links a:hover {
       color: #fff;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      background: #222;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    form button {
+      background: #0af;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
     @media (max-width: 768px) {
       .hero h1 { font-size: 2.5rem; }
       .hero .subtitle { font-size: 1.2rem; }
@@ -201,7 +220,7 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
-      <a href="#home" class="logo">Venkatakarthik</a>
+      <a href="#home" class="logo">Karthik Marineni</a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -214,7 +233,7 @@
   <!-- Hero -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Venkatakarthik Marineni</h1>
+      <h1>Karthik Marineni</h1>
       <p class="subtitle">Software Developer</p>
       <p class="description">
         Passionate software developer skilled in full-stack development, database management, and building scalable solutions. Experienced in Java, Python, and web technologies.
@@ -260,11 +279,16 @@
   <section id="contact" class="section contact">
     <h2 class="section-title">Get in Touch</h2>
     <div class="contact-info">
-      <a href="mailto:venkatakarthik22@gmail.com"><i class="fas fa-envelope"></i> venkatakarthik22@gmail.com</a>
-      <a href="tel:+1234567890"><i class="fas fa-phone"></i> +1 (234) 567-890</a>
-      <a href="https://github.com/V-Karthik-M" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/venkatakarthikmarineni22/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:karthikm2207@gmail.com"><i class="fas fa-envelope"></i> karthikm2207@gmail.com</a>
+      <a href="tel:+12602786429"><i class="fas fa-phone"></i> +1 (260) 278-6429</a>
     </div>
+
+    <form action="https://formspree.io/f/xdkzpkpg" method="POST" style="max-width: 600px; margin: 2rem auto;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <!-- Footer -->
@@ -272,9 +296,9 @@
     <div class="social-links">
       <a href="https://github.com/V-Karthik-M" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/venkatakarthikmarineni22/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:venkatakarthik22@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:karthikm2207@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-    <p>&copy; 2025 Venkatakarthik Marineni. All rights reserved.</p>
+    <p>&copy; 2025 Karthik Marineni. All rights reserved.</p>
   </footer>
 
 </body>
