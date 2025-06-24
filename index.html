@@ -3,215 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Karthik Maraneni - Full-Stack Developer</title>
+  <title>Karthik Maraneni – Software Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <style>
-    /* Keep all your original CSS styles here */
-    /* Just updated the content, not the style */
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 1000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul a:hover {
+      color: #888;
+    }
+
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #000, #1a1a1a);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(135deg, #fff, #888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #ccc;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #fff;
+      color: #fff;
+      background: transparent;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      margin: 0.5rem;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .box {
+      background: #111;
+      padding: 1.5rem;
+      border: 1px solid #333;
+      transition: all 0.3s ease;
+    }
+
+    .box:hover {
+      border-color: #fff;
+      transform: translateY(-5px);
+    }
+
+    .box h3 {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #333;
+      padding: 0.3rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.9rem;
+      margin: 0.25rem;
+    }
+
+    .contact-item {
+      margin-bottom: 1rem;
+    }
+
+    .contact-item a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #333;
+      background: #0a0a0a;
+    }
+
+    .socials a {
+      margin: 0 1rem;
+      color: #888;
+      font-size: 1.5rem;
+    }
+
+    .socials a:hover {
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
+
   <nav>
-    <div class="nav-container">
-      <a href="#home" class="logo">Karthik Maraneni</a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <a href="#" class="logo">Karthik Maraneni</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Karthik Maraneni</h1>
-      <p class="subtitle">Full-Stack Developer</p>
-      <p class="description">
-        Full-Stack Developer with experience in building scalable web apps using React.js, Node.js, and PostgreSQL.
-        Skilled in AWS, Docker, and CI/CD automation. Passionate about creating intuitive interfaces and resilient APIs.
-      </p>
-      <div class="cta-buttons">
-        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-        <a href="https://github.com/V-Karthik-M" class="btn btn-secondary" target="_blank">GitHub Profile</a>
+  <section class="hero" id="home">
+    <h1>Karthik Maraneni</h1>
+    <p>Software Developer based in Austin, TX</p>
+    <p>Experienced in building modern full-stack applications with React, Node.js, and AWS. Certified AWS Developer Associate.</p>
+    <div>
+      <a href="#contact" class="btn">Get in Touch</a>
+      <a href="https://github.com/V-Karthik-M" class="btn" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a software developer passionate about building scalable, secure web apps. I enjoy working across the full stack, from front-end UI to back-end APIs and cloud deployments.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Languages & Frameworks</h3>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">React.js</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Spring Boot</span>
+      </div>
+      <div class="box">
+        <h3>DevOps & Cloud</h3>
+        <span class="tag">AWS</span>
+        <span class="tag">Docker</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">Linux</span>
+      </div>
+      <div class="box">
+        <h3>Databases & APIs</h3>
+        <span class="tag">MongoDB</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">GraphQL</span>
+      </div>
+      <div class="box">
+        <h3>Testing & Tools</h3>
+        <span class="tag">Cypress</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">Jenkins</span>
+        <span class="tag">Postman</span>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2 class="section-title fade-in">About Me</h2>
-      <div class="about-content">
-        <div class="about-text fade-in">
-          <p>
-            I'm a Full-Stack Developer currently pursuing my MS in Computer Science at Purdue University with a GPA of 3.7.
-            I have professional experience developing scalable, secure, and high-performing applications using React, Node.js, and AWS.
-          </p>
-          <p>
-            I enjoy solving backend architecture challenges, designing REST APIs, and delivering sleek UIs with reusable components.
-            I'm passionate about building robust systems and love automating tasks using Docker, GitHub Actions, and cloud-native tools.
-          </p>
-        </div>
-        <div class="stats fade-in">
-          <div class="stat">
-            <div class="stat-number">3+</div>
-            <div class="stat-label">Years Experience</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">8+</div>
-            <div class="stat-label">Projects Completed</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">2</div>
-            <div class="stat-label">Internships</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">15+</div>
-            <div class="stat-label">Technologies</div>
-          </div>
-        </div>
-      </div>
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="box">
+      <h3>Software Developer – H-E-B</h3>
+      <p><strong>Aug 2024 – Present</strong></p>
+      <p>Building APIs and full-stack features using React, Node.js, and PostgreSQL. Implementing GitHub Actions for CI/CD. Deploying via Docker and AWS.</p>
+    </div>
+    <div class="box">
+      <h3>Intern – Full Stack Developer, H-E-B</h3>
+      <p><strong>Jan 2024 – Jul 2024</strong></p>
+      <p>Developed new UI features, wrote unit tests, and collaborated in agile sprints. Worked on internal dashboards and deployment pipelines.</p>
+    </div>
+    <div class="box">
+      <h3>Full Stack Developer – Cognizant</h3>
+      <p><strong>Aug 2022 – Jul 2023</strong></p>
+      <p>Developed Angular-based SPAs and Spring Boot APIs. Integrated with MongoDB and deployed on Kubernetes clusters.</p>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
-    <div class="container">
-      <h2 class="section-title fade-in">Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category fade-in">
-          <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">React.js</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">FastAPI</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <h3><i class="fas fa-server"></i> Backend & Databases</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Sequelize</span>
-            <span class="skill-tag">Redis</span>
-            <span class="skill-tag">RabbitMQ</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">AWS (Certified)</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">GitHub Actions</span>
-            <span class="skill-tag">Linux</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <h3><i class="fas fa-vial"></i> Testing & Tools</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">Cypress</span>
-            <span class="skill-tag">Jest</span>
-            <span class="skill-tag">Swagger</span>
-          </div>
-        </div>
-      </div>
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="box">
+      <h3>EventEase – Event Management System</h3>
+      <p>Built with React, Node.js, and PostgreSQL. Includes QR-based ticketing, Stripe payment integration, and analytics dashboard with Chart.js.</p>
+    </div>
+    <div class="box">
+      <h3>Food Truck Tracking System</h3>
+      <p>Real-time dashboard for delivery tracking and order management. Stack: React, Node.js, JWT, PostgreSQL, Docker.</p>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section experience">
-    <div class="container">
-      <h2 class="section-title fade-in">Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item fade-in">
-          <div class="timeline-content">
-            <div class="timeline-date">Aug 2024 – Present</div>
-            <h3 class="timeline-title">Software Developer</h3>
-            <div class="timeline-company">H-E-B, USA</div>
-            <div class="timeline-description">
-              Built APIs and real-time dashboards using Node.js and React. Automated CI/CD pipelines with Docker and GitHub Actions. Led enhancements to inventory tracking and ordering features.
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-content">
-            <div class="timeline-date">Jan 2024 – Jul 2024</div>
-            <h3 class="timeline-title">Full Stack Developer Intern</h3>
-            <div class="timeline-company">H-E-B, USA</div>
-            <div class="timeline-description">
-              Developed role-based access control with JWTs and integrated automated testing. Delivered dashboard components and API endpoints to support internal logistics systems.
-            </div>
-          </div>
-        </div>
-        <div class="timeline-item fade-in">
-          <div class="timeline-content">
-            <div class="timeline-date">Aug 2022 – Jul 2023</div>
-            <h3 class="timeline-title">Full Stack Developer</h3>
-            <div class="timeline-company">Cognizant, India</div>
-            <div class="timeline-description">
-              Developed Angular SPAs, Spring Boot APIs, and Dockerized microservices. Set up Kubernetes deployments with Nginx reverse proxies and logging via ELK stack.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-item"><strong>Email:</strong> <a href="mailto:vkarthik2207@gmail.com">vkarthik2207@gmail.com</a></div>
+    <div class="contact-item"><strong>Phone:</strong> <a href="tel:+12602786429">+1 (260) 278-6429</a></div>
+    <div class="contact-item"><strong>Location:</strong> Austin, TX</div>
+    <div class="contact-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/venkatakarthikmarineni22/" target="_blank">venkatakarthikmarineni22</a></div>
+    <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/V-Karthik-M" target="_blank">V-Karthik-M</a></div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2 class="section-title fade-in">Get In Touch</h2>
-      <div class="contact-content">
-        <div class="contact-info fade-in">
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:vkarthik2207@gmail.com">vkarthik2207@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+12602786429">+1 (260) 278-6429</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Austin, TX</span>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a href="https://linkedin.com/in/venkatakarthikmarineni" target="_blank">LinkedIn</a>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/V-Karthik-M" target="_blank">GitHub</a>
-          </div>
-        </div>
-        <!-- Contact form section can stay the same or be removed -->
-      </div>
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/V-Karthik-M" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/venkatakarthikmarineni22/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:vkarthik2207@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-links">
-        <a href="https://linkedin.com/in/venkatakarthikmarineni" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/V-Karthik-M" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:vkarthik2207@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p>&copy; 2025 Karthik Maraneni. All rights reserved.</p>
-    </div>
+    <p>© 2025 Karthik Maraneni. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
