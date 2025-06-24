@@ -72,7 +72,6 @@
     .hero h1 {
       font-size: 3rem;
       font-weight: 700;
-      color: #fff;
     }
     .subtitle {
       font-size: 1.5rem;
@@ -127,27 +126,25 @@
       border-radius: 20px;
     }
 
-    /* Experience */
-    .experience-entry {
+    .experience-entry, .education-entry {
       background: #111;
       border-left: 4px solid #fff;
       padding: 1rem 1.5rem;
       margin-bottom: 2rem;
     }
-    .experience-entry h3 {
+
+    .experience-entry h3, .education-entry h3 {
       margin: 0;
       font-size: 1.2rem;
-      color: #fff;
     }
-    .experience-entry small {
+    .experience-entry small, .education-entry small {
       color: #aaa;
     }
-    .experience-entry p {
+    .experience-entry p, .education-entry p {
       color: #ccc;
       margin-top: 0.5rem;
     }
 
-    /* Contact */
     form {
       max-width: 600px;
       margin: 2rem auto 0;
@@ -204,12 +201,13 @@
 <!-- Navigation -->
 <nav>
   <div class="nav-container">
-    <a href="#home" class="logo">Venkatakarthik</a>
+    <a href="#home" class="logo">Karthik</a>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -217,10 +215,10 @@
 
 <!-- Hero -->
 <section id="home" class="hero">
-  <h1>Venkatakarthik Marineni</h1>
+  <h1>Karthik Marineni</h1>
   <p class="subtitle">Software Developer</p>
   <p class="description">
-    Passionate software developer skilled in full-stack development, database management, and building scalable solutions. Experienced in Java, Python, and web technologies.
+    Experienced Full Stack Developer proficient in React.js, Node.js, Express, MongoDB, and AWS. Passionate about building responsive web apps, REST APIs, and solving real-world problems with scalable solutions.
   </p>
   <div class="cta-buttons">
     <a href="#contact" class="btn">Get In Touch</a>
@@ -234,10 +232,7 @@
 <section id="about" class="section">
   <h2 class="section-title">About Me</h2>
   <p>
-    I'm a dedicated software engineer with a strong foundation in computer science principles, problem-solving, and software development. I enjoy working on web technologies, backend logic, and data-driven applications.
-  </p>
-  <p>
-    Currently exploring opportunities to apply my skills in building impactful applications, improving system efficiency, and learning cutting-edge technologies.
+    I'm currently pursuing a Master’s in Computer Science at Purdue University Fort Wayne. I bring real-world experience from internships and full-time work in full-stack development.
   </p>
 </section>
 
@@ -245,33 +240,48 @@
 <section id="skills" class="section">
   <h2 class="section-title">Skills</h2>
   <div class="skills-grid">
-    <span class="skill-tag">Java</span>
-    <span class="skill-tag">Python</span>
     <span class="skill-tag">JavaScript</span>
-    <span class="skill-tag">HTML/CSS</span>
-    <span class="skill-tag">React</span>
+    <span class="skill-tag">React.js</span>
     <span class="skill-tag">Node.js</span>
-    <span class="skill-tag">SQL</span>
     <span class="skill-tag">MongoDB</span>
-    <span class="skill-tag">Git/GitHub</span>
-    <span class="skill-tag">REST APIs</span>
+    <span class="skill-tag">Express</span>
+    <span class="skill-tag">AWS</span>
+    <span class="skill-tag">Git</span>
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">HTML/CSS</span>
   </div>
 </section>
 
 <!-- Experience -->
 <section id="experience" class="section">
-  <h2 class="section-title">Work Experience</h2>
+  <h2 class="section-title">Experience</h2>
 
   <div class="experience-entry">
-    <h3>Software Developer Intern - ABC Tech</h3>
-    <small>May 2023 – August 2023 | Hyderabad, India</small>
-    <p>Worked on frontend development using React and backend API integration using Node.js and Express. Collaborated with cross-functional teams to deliver features.</p>
+    <h3>Software Developer Intern - H-E-B</h3>
+    <small>Aug 2024 – Present | Austin, TX</small>
+    <p>Developing full-stack features using React and Node.js. Deployed apps on AWS. Collaborated with senior developers to improve backend APIs.</p>
   </div>
 
   <div class="experience-entry">
-    <h3>Freelance Developer</h3>
-    <small>2022 – Present</small>
-    <p>Built multiple personal and academic projects involving full-stack web development and automation scripts.</p>
+    <h3>Full Stack Developer Intern - H-E-B</h3>
+    <small>Jan 2024 – Jul 2024 | Austin, TX</small>
+    <p>Worked on scalable web apps and integrated third-party APIs using Node and MongoDB. Automated testing pipelines for CI/CD.</p>
+  </div>
+
+  <div class="experience-entry">
+    <h3>Full Stack Developer - Cognizant</h3>
+    <small>Aug 2022 – Jul 2023 | Hyderabad, India</small>
+    <p>Built user dashboards and REST APIs. Focused on performance optimization and UI improvements. Used Git, Jira, and Agile practices.</p>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+  <h2 class="section-title">Education</h2>
+  <div class="education-entry">
+    <h3>Purdue University, Fort Wayne</h3>
+    <small>Aug 2023 – May 2025 | MS in Computer Science</small>
+    <p>GPA: 3.7/4.0 – Courses in Distributed Systems, Cloud Computing, Machine Learning</p>
   </div>
 </section>
 
@@ -293,7 +303,7 @@
     <a href="https://www.linkedin.com/in/venkatakarthikmarineni22/" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="mailto:karthikm2207@gmail.com"><i class="fas fa-envelope"></i></a>
   </div>
-  <p>&copy; 2025 Venkatakarthik Marineni. All rights reserved.</p>
+  <p>&copy; 2025 Karthik Marineni. All rights reserved.</p>
 </footer>
 
 </body>
